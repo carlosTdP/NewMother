@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario</title>
-    <!-- Enlace a tu hoja de estilos CSS existente -->
+    <title>Registro y Perfil de Usuario</title>
+    <!-- Enlace a tu hoja de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Registro de Usuario</h1>
+        <h1>Registro y Perfil de Usuario</h1>
+        <button id="menuBtn">Menú</button>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscar_profesionales.html">Buscar Profesionales</a></li>
+            <li><a href="reservar_cita.html">Reservar Cita</a></li>
+            <!-- Agrega aquí más opciones de navegación si es necesario -->
+        </ul>
+    </nav>
     <main>
+        <!-- Formulario de registro de cuenta -->
+        <h2>Registro de Cuenta</h2>
         <form action="procesar_registro.php" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -29,6 +40,12 @@
             <input type="password" id="contrasena" name="contrasena" required>
             <br>
 
+            <input type="submit" value="Registrarse">
+        </form>
+
+        <!-- Formulario de perfil de usuario -->
+        <h2>Perfil de Usuario</h2>
+        <form action="actualizar_perfil.php" method="POST">
             <label for="fecha_embarazo">Fecha de Embarazo:</label>
             <input type="date" id="fecha_embarazo" name="fecha_embarazo" required>
             <br>
@@ -37,11 +54,13 @@
             <input type="date" id="fecha_postparto" name="fecha_postparto" required>
             <br>
 
-            <input type="submit" value="Registrarse">
+            <!-- Agrega aquí más detalles relevantes sobre el embarazo y el postparto -->
+            
+            <input type="submit" value="Guardar Cambios">
         </form>
     </main>
     <footer>
-        <p>&copy; 2023 Help New Mother</p>
+        <p>&copy; 2023 Mi Aplicación Postparto</p>
     </footer>
 </body>
 </html>
