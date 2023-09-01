@@ -1,4 +1,13 @@
 /* styles.css */
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    position: relative; /* Cambia a "relative" en lugar de "absolute" */
+    clear: both; /* Limpia el contenido flotante anterior */
+}
 
 /* Estilos generales */
 body {
