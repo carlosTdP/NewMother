@@ -55,10 +55,30 @@
             <input type="submit" value="Registrarse">
         </form>
 
-       
+        <!-- Mensaje de confirmación oculto por defecto -->
+        <div id="confirmacion" style="display: none;">
+            Usuario registrado correctamente.
+        </div>
     </main>
     <footer>
         <p>&copy; 2023 Help New Mother</p>
     </footer>
+
+    <!-- Script JavaScript para mostrar el mensaje de confirmación -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const formulario = document.querySelector("form");
+            const confirmacion = document.getElementById("confirmacion");
+
+            formulario.addEventListener("submit", function(event) {
+                event.preventDefault(); // Evita el envío del formulario
+
+                // Simula el registro y muestra el mensaje de confirmación
+                // Aquí puedes agregar tu lógica de registro real si es necesario
+                confirmacion.style.display = "block";
+            });
+        });
+    </script>
 </body>
 </html>
+
