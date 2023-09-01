@@ -28,6 +28,11 @@
         <!-- Calendario para seleccionar fecha y hora de la cita -->
         <h2>Programar una Cita</h2>
         <form action="procesar_reserva.php" method="POST">
+            
+            <label for="apellido">Profesional :</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            
             <label for="fecha_cita">Fecha de la Cita:</label>
             <input type="date" id="fecha_cita" name="fecha_cita" required>
             <br>
@@ -42,9 +47,22 @@
         </form>
 
         <!-- Calendario para ver la disponibilidad de los profesionales -->
-        <h2>Disponibilidad de Profesionales</h2>
+        <!--<h2>Disponibilidad de Profesionales</h2>-->
         <!-- Aquí puedes mostrar un calendario interactivo que muestra la disponibilidad de los profesionales -->
         <!-- Los detalles de disponibilidad pueden actualizarse en tiempo real -->
+
+        <section id="resultados">
+    <h2>Confirmación de Reserva</h2>
+    <p>¡Tu cita ha sido reservada con éxito!</p>
+    <p>Detalles de la cita:</p>
+    <ul>
+        <li><strong>Profesional:</strong> Dr. Juan Perez</li>
+        <li><strong>Fecha:</strong> 2023-09-15</li>
+        <li><strong>Hora:</strong> 14:30</li>
+        <!-- Agrega más detalles de la cita según sea necesario -->
+    </ul>
+</section>
+        
     </main>
     <footer>
         <p>&copy; 2023 Help New Mother</p>
