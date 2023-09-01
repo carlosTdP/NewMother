@@ -3,31 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help New Mother - Buscar Profesionales</title>
-    <!-- Enlace a la hoja de estilos CSS -->
+    <title>Búsqueda de Profesionales de la Salud Emocional</title>
+    <!-- Enlace a tu hoja de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="app-header">
-        <!-- Encabezado de la página de búsqueda de profesionales -->
-        <h1>Buscar Profesionales de Salud Emocional</h1>
-        <button class="menu-btn">Menú</button>
+    <header>
+        <h1>Búsqueda de Profesionales de la Salud Emocional</h1>
+        <button id="menuBtn">Menú</button>
     </header>
-    <nav class="app-nav">
-        <!-- Menú de navegación -->
+    <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="buscar_profesionales.html">Buscar Profesionales</a></li>
             <li><a href="reservar_cita.html">Reservar Cita</a></li>
+            <!-- Agrega aquí más opciones de navegación si es necesario -->
         </ul>
     </nav>
-    <main class="app-main">
-        <!-- Contenido principal de la página de búsqueda de profesionales -->
-        <!-- Agrega aquí el contenido específico de esta página -->
+    <main>
+        <!-- Barra de búsqueda con filtros -->
+        <h2>Buscar Profesionales</h2>
+        <form action="procesar_busqueda.php" method="POST">
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion">
+            <br>
+
+            <label for="especializacion">Especialización:</label>
+            <input type="text" id="especializacion" name="especializacion">
+            <br>
+
+            <label for="disponibilidad">Disponibilidad:</label>
+            <input type="text" id="disponibilidad" name="disponibilidad">
+            <br>
+
+            <!-- Agrega más filtros de búsqueda según sea necesario -->
+
+            <input type="submit" value="Buscar">
+        </form>
+
+        <!-- Resultados de la búsqueda -->
+        <h2>Resultados de la Búsqueda</h2>
+        <!-- Aquí puedes mostrar los perfiles de profesionales con información detallada sobre su experiencia y calificaciones -->
+        <!-- Por ejemplo, puedes usar listas o tarjetas para mostrar cada perfil -->
     </main>
-    <footer class="app-footer">
-        <!-- Pie de página -->
-        <p>&copy; 2023 Help New Mother</p>
+    <footer>
+        <p>&copy; 2023 Mi Aplicación Postparto</p>
     </footer>
 </body>
 </html>
