@@ -76,18 +76,18 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const formulario = document.querySelector("form");
-        const resultados = document.querySelector("h2");
+        const resultados = document.getElementById("resultados");
 
         formulario.addEventListener("submit", function(event) {
             event.preventDefault(); // Evita el envío del formulario
 
-            // Aquí puedes agregar lógica para procesar la búsqueda y obtener resultados reales si lo deseas
+            // Aquí puedes agregar lógica para procesar la reserva y obtener detalles reales si lo deseas
 
             // Muestra la sección de resultados
             resultados.style.display = "block";
         });
     });
 </script>
-
+    
 </body>
 </html>
