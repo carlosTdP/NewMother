@@ -3,31 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help New Mother - Reservar Cita</title>
-    <!-- Enlace a la hoja de estilos CSS -->
+    <title>Reserva de Citas</title>
+    <!-- Enlace a tu hoja de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="app-header">
-        <!-- Encabezado de la página de reserva de citas -->
-        <h1>Reservar una Cita</h1>
-        <button class="menu-btn">Menú</button>
+    <header>
+        <h1>Reserva de Citas</h1>
+        <button id="menuBtn">Menú</button>
     </header>
-    <nav class="app-nav">
-        <!-- Menú de navegación -->
+    <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="buscar_profesionales.html">Buscar Profesionales</a></li>
             <li><a href="reservar_cita.html">Reservar Cita</a></li>
+            <!-- Agrega aquí más opciones de navegación si es necesario -->
         </ul>
     </nav>
-    <main class="app-main">
-        <!-- Contenido principal de la página de reserva de citas -->
-        <!-- Agrega aquí el contenido específico de esta página -->
+    <main>
+        <!-- Calendario para seleccionar fecha y hora de la cita -->
+        <h2>Programar una Cita</h2>
+        <form action="procesar_reserva.php" method="POST">
+            <label for="fecha_cita">Fecha de la Cita:</label>
+            <input type="date" id="fecha_cita" name="fecha_cita" required>
+            <br>
+
+            <label for="hora_cita">Hora de la Cita:</label>
+            <input type="time" id="hora_cita" name="hora_cita" required>
+            <br>
+
+            <!-- Agrega más detalles y opciones de reserva según sea necesario -->
+
+            <input type="submit" value="Reservar Cita">
+        </form>
+
+        <!-- Calendario para ver la disponibilidad de los profesionales -->
+        <h2>Disponibilidad de Profesionales</h2>
+        <!-- Aquí puedes mostrar un calendario interactivo que muestra la disponibilidad de los profesionales -->
+        <!-- Los detalles de disponibilidad pueden actualizarse en tiempo real -->
     </main>
-    <footer class="app-footer">
-        <!-- Pie de página -->
-        <p>&copy; 2023 Help New Mother</p>
+    <footer>
+        <p>&copy; 2023 Mi Aplicación Postparto</p>
     </footer>
 </body>
 </html>
