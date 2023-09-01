@@ -92,3 +92,8 @@ footer {
     margin: 0;
 }
 
+/* Estilo para ocultar la sección de resultados al principio */
+#resultados {
+    display: none;
+}
+
