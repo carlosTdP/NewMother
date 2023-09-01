@@ -51,7 +51,7 @@
         <!-- Aquí puedes mostrar un calendario interactivo que muestra la disponibilidad de los profesionales -->
         <!-- Los detalles de disponibilidad pueden actualizarse en tiempo real -->
 
-        <section id="resultados">
+<section id="resultados">
     <h2>Confirmación de Reserva</h2>
     <p>¡Tu cita ha sido reservada con éxito!</p>
     <p>Detalles de la cita:</p>
@@ -67,5 +67,22 @@
     <footer>
         <p>&copy; 2023 Help New Mother</p>
     </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const formulario = document.querySelector("form");
+        const resultados = document.getElementById("resultados");
+
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Aquí puedes agregar lógica para procesar la reserva y obtener detalles reales si lo deseas
+
+            // Muestra la sección de resultados
+            resultados.style.display = "block";
+        });
+    });
+</script>
+
 </body>
 </html>
