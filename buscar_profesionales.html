@@ -46,8 +46,8 @@
         </form>
 
         <!-- Resultados de la búsqueda -->
-        <h2>Resultados de la Búsqueda</h2>
-        
+        <h2 style="display: none;">Resultados de la Búsqueda</h2>
+
     <!-- Primer resultado simulado -->
     <div class="resultado">
         <h3>Dr. Juan Pérez</h3>
@@ -72,5 +72,22 @@
     <footer>
         <p>&copy; 2023 Help New Mother</p>
     </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const formulario = document.querySelector("form");
+        const resultados = document.querySelector("h2");
+
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Aquí puedes agregar lógica para procesar la búsqueda y obtener resultados reales si lo deseas
+
+            // Muestra la sección de resultados
+            resultados.style.display = "block";
+        });
+    });
+</script>
+
 </body>
 </html>
